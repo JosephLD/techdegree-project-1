@@ -3,28 +3,64 @@ Treehouse FSJS Techdegree:
 project 1 - A Random Quote Generator
 ******************************************/
 
-// Study guide for this project - https://drive.google.com/file/d/1s5grutGuQFwJcQP8bFwEI69Q8FCkGdDk/view?usp=sharing
-
-
-/*** 
-  Create the array of quote objects and name it `quotes`.
-  Add at least five quote objects to the `quotes` array.
-  Give each quote object a `quote` and `source` property.
-  Add the `citation` property to at least one object in the array.
-  Add the `year` property to at least one object in the array.
-  Use console.log() to log your array of quotes to the console.
-***/
-
-
-
-
-/***
-  Create the `getRandomQuote` function to:
-   - Create a variable to store a random number 
-   - Cse the random number to `return` a random quote object from the `quotes` array.
-***/
-
-
+//Here I create the array of quotes
+let quotes = [
+  {
+    quote: 'A',
+    source: 'a'
+  },
+  {
+    quote: 'B',
+    source: 'b'
+  } ,
+  {
+    quote: 'C',
+    source: 'c'
+  },
+  {
+    quote: 'D',
+    source: 'd'
+  },
+  {
+    quote: 'E',
+    source: 'e'
+  },
+  {
+    quote: 'F',
+    source: 'f'
+  },
+  {
+    quote: 'G',
+    source: 'g'
+  },
+  {
+    quote: 'H',
+    source: 'h'
+  },
+  {
+    quote: 'I',
+    source: 'i',
+    citation: '12',
+    year: 1324
+  },
+  {
+    quote: 'J',
+    source: 'j',
+    citation: 'lnmop',
+    year: 1981
+  }
+]
+//Testing that the array is correct
+console.log(quotes);
+//Here I create the function to generate a random quote object from the array
+function getRandomQuote()  {
+  //here I generate a random number from 0 to 9
+  let randomNumber = (Math.floor(Math.random() * quotes.length));
+  //And now I assign the newly created number to a quote object and the return the quote
+  return quotes[randomNumber];
+}
+//Testing that the random quote is generated
+console.log(getRandomQuote());
 
 
 /***
