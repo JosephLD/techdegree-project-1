@@ -81,10 +81,10 @@ function printQuote() {
   message += '<p class="quote">' + randomQuote.quote + '</p>';
   message += '<p class= "source">' + randomQuote.source;
   //Need to figure out a way to get the conditionals to work
-    if (randomQuote.citation !== -1) {
+    if (randomQuote.citation !== undefined) {
       message += '<span class="citation">' + randomQuote.citation + '</span>'
     }
-    if(randomQuote.year !== -1) {
+    if(randomQuote.year !== undefined) {
      message += '<span class="year">' + randomQuote.year + '</span>'
     }
   message += '</p>';
@@ -92,13 +92,8 @@ function printQuote() {
 document.getElementById("quote-box").innerHTML = message;
 }
 
-/***
-  When the "Show another quote" button is clicked, the event listener 
-  below will be triggered, and it will call, or "invoke", the `printQuote` 
-  function. So do not make any changes to the line of code below this 
-  comment.
-***/
 
+//Reminder: DO NOT TOUCH THIS CODE.
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 
 
