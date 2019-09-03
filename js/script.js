@@ -75,9 +75,22 @@ console.log(getRandomQuote());
    - Don't forget to close that final `p` tag.
    - Set the `innerHTML` of the `quote-box` div to the HTML string. 
 ***/
-
-
-
+function printQuote() {
+  let randomQuote = getRandomQuote();
+  let message = "";
+  message += '<p class="quote">' + randomQuote.quote + '</p>';
+  message += '<p class= "source">' + randomQuote.source;
+  //Need to figure out a way to get the conditionals to work
+    if (randomQuote.citation !== -1) {
+      message += '<span class="citation">' + randomQuote.citation + '</span>'
+    }
+    if(randomQuote.year !== -1) {
+     message += '<span class="year">' + randomQuote.year + '</span>'
+    }
+  message += '</p>';
+  //Using getElementById from MDN to try to target the 'quote box' div
+document.getElementById("quote-box").innerHTML = message;
+}
 
 /***
   When the "Show another quote" button is clicked, the event listener 
