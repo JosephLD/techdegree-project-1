@@ -7,48 +7,30 @@ project 1 - A Random Quote Generator
 //Using simple letter strings as filler while I flush out the code
 let quotes = [
   {
-    quote: 'A',
-    source: 'a'
+    quote: 'I am a leaf on the wind.  Watch how I soar.',
+    source: 'Hoban "Wash" Washburne',
+    citation: 'Serenity',
+    year: 2005
   },
   {
-    quote: 'B',
-    source: 'b'
+    quote: 'In ancient times cats were worshipped as gods.  They have not forgotten this.',
+    source: 'Terry Pratchett'
   } ,
   {
-    quote: 'C',
-    source: 'c'
+    quote: 'All we have to decide is what to do with the time that is given us.',
+    source: 'Gandalf',
+    citation: 'The Fellowship of the Ring',
+    year: 1954
   },
   {
-    quote: 'D',
-    source: 'd'
+    quote: 'We are what we pretend to be, so we must be careful about what we pretend to be.',
+    source: 'Kurt Vonnegut',
+    citation: 'Mother Night',
   },
   {
-    quote: 'E',
-    source: 'e'
-  },
-  {
-    quote: 'F',
-    source: 'f'
-  },
-  {
-    quote: 'G',
-    source: 'g'
-  },
-  {
-    quote: 'H',
-    source: 'h'
-  },
-  {
-    quote: 'I',
-    source: 'i',
-    citation: '12',
-    year: 1324
-  },
-  {
-    quote: 'J',
-    source: 'j',
-    citation: 'lnmop',
-    year: 1981
+    quote: "It's dangerous to go alone!  Take this.",
+    source: 'Old Man',
+    citation: 'The Legend of Zelda'
   }
 ]
 
